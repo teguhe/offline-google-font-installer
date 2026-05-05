@@ -29,6 +29,7 @@ from tkinter import ttk, filedialog, messagebox
 # ── Konstanta ────────────────────────────────────────────────────────────────
 APP_NAME    = "Google Fonts Offline Installer"
 APP_VERSION = "1.0.0"
+TEGUHE = "(build by teguhe@gmail.com | code assisted by AI)"
 FONT_EXTENSIONS = {".ttf", ".otf"}
 
 # Folder instalasi Windows
@@ -165,7 +166,7 @@ class FontInstallerApp(tk.Tk):
 
     def __init__(self):
         super().__init__()
-        self.title(f"  {APP_NAME}  v{APP_VERSION}")
+        self.title(f"  {APP_NAME}  v{APP_VERSION} {TEGUHE}")
         self.geometry("820x640")
         self.minsize(700, 500)
         self.configure(bg=self.COLORS["bg"])
